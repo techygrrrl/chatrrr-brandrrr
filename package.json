@@ -23,6 +23,8 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "dotenv": "^16.0.3",
+    "express": "^4.17.2",
+    "tmi.js": "^1.8.5"
   }
 }
