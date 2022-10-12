@@ -29,7 +29,7 @@ client.on("message", (channel, tags, message, isSelf) => {
   const senderUser = tags["display-name"];
   const modifiedMessage = message.replace(/r/gi, "rrr");
 
-  if (!isSelf) {
+  if (!isSelf && modifiedMessage !== message) {
     client.say(
       channel,
       `@${senderUser} did you mean: ${modifiedMessage}? Kappa`
